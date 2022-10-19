@@ -1,0 +1,39 @@
+$x-wid: 690rpx;
+@mixin x-m-cen {
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin x-flex {
+	display: flex;
+}
+@mixin x-flex-btn{
+	@include x-flex();
+	justify-content: space-between;
+}
+@mixin x-flex-cen{
+	@include x-flex();
+	justify-content: center
+}
+@mixin x-flex-alc{
+	@include x-flex();
+	align-items: center;
+}
+@mixin x-w100 {
+	width: 100%;
+}
+.x-content {
+	width: $x-wid;
+	@include x-m-cen();
+}
+.x-flex {
+	@include x-flex();
+}
+.x-flex-alc {
+	@include x-flex-alc();
+}
+.x-flex-btn {
+	@include x-flex-btn();
+}
+.x-flex-cen{
+	@include x-flex-cen();	
+}

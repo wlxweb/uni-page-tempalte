@@ -1,14 +1,17 @@
 <script>
 export default {
 	onLaunch: function() {
-		console.log('App Launch');
+		uni.loadFontFace({
+			family: 'remixicon',
+			global: true,
+			source: 'https://webwlx.oss-cn-beijing.aliyuncs.com/uni-page-template/font/remixicon.ttf',
+			fail(err) {
+			console.log('字体包加载失败');
+			}
+		});
 	},
-	onShow: function() {
-		console.log('App Show');
-	},
-	onHide: function() {
-		console.log('App Hide');
-	}
+	onShow: function() {},
+	onHide: function() {}
 };
 </script>
 
